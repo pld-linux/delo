@@ -1,6 +1,7 @@
 %define		debver	0.8-2
 %define		ver %(echo %{debver} | sed 's/-.*//')
 Summary:	The DECstation boot loader
+Summary(pl.UTF-8):	Bootloader dla maszyn DECstation
 Name:		delo
 Version:	%{ver}
 Release:	0.1
@@ -20,6 +21,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is DELO, the DECstation boot loader, which you need to boot Linux
 on DECstations from storage media. It can also create bootable media
 for DECstations on other machines.
+
+%description -l pl.UTF-8
+Ten pakiet zawiera DELO - bootloader dla maszyn DECstation, potrzebny
+do uruchomienia Linuksa na takich maszynach. Może także tworzyć
+bootowalne nośniki na innych maszynach.
 
 %prep
 %setup -q
