@@ -8,11 +8,12 @@ Release:	0.1
 License:	GPL
 Group:		Applications/System
 # debian? can't find original
-Source0:	ftp://ftp.pl.debian.org/debian/pool/main/d/delo/%{name}_%{debver}.tar.gz
+Source0:	ftp://ftp.debian.org/debian/pool/main/d/delo/%{name}_%{debver}.tar.gz
 # Source0-md5:	c230e2c175a6488c7145b9a7118cc5ba
-#URL:		
+#URL:
 Provides:	bootloader
 #ExclusiveArch:	mipsel
+BuildRequires: INSTALL_TO_RPM_BUILD_ROOT
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sbindir	/sbin
@@ -62,6 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) /boot/delo.2nd
 %attr(755,root,root) %{_sbindir}/delo
 %attr(755,root,root) %{_bindir}/t-rex
-%dir %attr(755,root,root) %{_libdir}/%{name}
+%dir %{_libdir}/%{name}
 %attr(755,root,root) %{_libdir}/%{name}/*
 %{_mandir}/man[158]/*
