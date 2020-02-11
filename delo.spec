@@ -8,7 +8,7 @@ Release:	0.1
 License:	GPL
 Group:		Applications/System
 # debian? can't find original
-Source0:	ftp://ftp.debian.org/debian/pool/main/d/delo/%{name}_%{debver}.tar.gz
+Source0:	http://ftp.debian.org/debian/pool/main/d/delo/%{name}_%{debver}.tar.gz
 # Source0-md5:	c230e2c175a6488c7145b9a7118cc5ba
 #URL:
 Provides:	bootloader
